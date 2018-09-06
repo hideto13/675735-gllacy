@@ -7,19 +7,78 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body><div class="container">
+  <body><div class="container catalog-container">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип"></a>
       <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="#">Каталог</a></li>
+        <li class="site-navigation-item site-navigation-item-current"><a href="#">Каталог</a></li>
         <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
         <li class="site-navigation-item"><a href="#">О компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-navigation-item"><a href="#">Поиск</a></li>
-        <li class="user-navigation-item"><a href="#">Вход</a></li>
-        <li class="user-navigation-item"><a href="#">Корзина</a></li>
+        <li class="user-navigation-item"><a href="#"><span class="visually-hidden">Поиск</span>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
+          height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+       <g id="Layer_2">
+         <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+           S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+           S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+       </g>
+       </svg></a>
+        </li>
+        <li class="user-navigation-item"><a href="#">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+         <g>
+           <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+           <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+             />
+         </g>
+         </svg>Вход</a>
+        </li>
+        <li class="user-navigation-item"><a href="#">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+         <g>
+           <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+             L17.372,13z"/>
+           <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
+           <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+         </g>
+         </svg>
+         Корзина</a>
+         <div class="modal modal-case">
+           <table>
+             <caption class="visually-hidden">Что в корзине</caption>
+              <tr class="visually-hidden">
+                  <th>Удалить</th>
+                  <th>Мини-изображение</th>
+                  <th>Название</th>
+                  <th>Колличество</th>
+                  <th>Цена</th>
+              </tr>
+            <tr>
+              <td></td>
+              <td><img src="" width="" height="" alt=""></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5кг х 200руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="" width="" height="" alt=""></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td>1,5кг х 300руб.</td>
+                <td>450 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="5">Итого:750 руб.</td>
+            </tr>
+           </table>
+           <a class="button">Оформить заказ</a>
+         </div>
+        </li>
       </ul>
       </nav>
       <p class="contacts">С 10 до 20, ежедневно<br>
@@ -59,20 +118,28 @@
             <legend class="filter-name filter-fat-title">Жирность:</legend>
             <ul class="filter-item">
               <li class="filter-option">
+                <label class="radio-label" for="0-fat">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="0%" id="0-fat">
-                <label for="0-fat">0%</label>
+                <span class="radio-indicator"></span>
+                0%</label>
               </li>
               <li class="filter-option">
+                <label class="radio-label" for="low-10-fat">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="low-10%" id="low-10-fat">
-                <label for="low-10-fat">до 10%</label>
+                <span class="radio-indicator"></span>
+                до 10%</label>
               </li>
               <li class="filter-option">
+                <label class="radio-label" for="low-30-fat">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="low-30%" id="low-30-fat">
-                <label for="low-30-fat">до 30%</label>
+                <span class="radio-indicator"></span>
+                до 30%</label>
               </li>
               <li class="filter-option">
+                <label class="radio-label" for="more-30-fat">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat" value="more-30%" id="more-30-fat">
-                <label for="more-30-fat">выше 30%</label>
+                <span class="radio-indicator"></span>
+                выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -80,24 +147,34 @@
             <legend class="filter-name filter-fill-title">Наполнители:</legend>
             <ul class="filter-item">
               <li class="filter-option">
+                <label  class="checkbox-label"for="filter-choco">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="choco" id="filter-choco" checked>
-                <label for="filter-choco">шоколадные</label>
+                <span class="checkbox-indicator"></span>
+                шоколадные</label>
               </li>
               <li class="filter-option">
+                  <label class="checkbox-label" for="filter-sugar">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
-                <label for="filter-sugar">сахарные присыпки</label>
+                <span class="checkbox-indicator"></span>
+                сахарные присыпки</label>
               </li>
               <li class="filter-option">
+                  <label class="checkbox-label" for="filter-fruits">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits" id="filter-fruits">
-                <label for="filter-fruits">фрукты</label>
+                <span class="checkbox-indicator"></span>
+                фрукты</label>
               </li>
               <li class="filter-option">
+                  <label class="checkbox-label" for="filter-syrup">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
-                <label for="filter-syrup">сиропы</label>
+                <span class="checkbox-indicator"></span>
+                сиропы</label>
               </li>
               <li class="filter-option">
+                  <label class="checkbox-label" for="filter-jam">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
-                <label for="filter-jam">джемы</label>
+                <span class="checkbox-indicator"></span>
+                джемы</label>
               </li>
             </ul>
           </fieldset>
