@@ -254,7 +254,7 @@ input[type="radio"].visually-hidden {
   flex-grow: 1;
   margin-top: 10px;
   margin-left: 10px;
-  margin-right: 35px;
+  margin-right: 30px;
   padding: 0;
 }
 
@@ -275,10 +275,12 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin-top: 15px;
 }
-
+.site-navigation li {
+  padding: 0px 6px;
+}
 .catalog-name {
   margin: 0px;
-  padding: 0px;
+  padding: 0;
   padding-bottom: 15px;
 }
 .catalog-name-list {
@@ -430,7 +432,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: end;
           align-items: flex-end;
   list-style: none;
-  padding: 0;
+  padding: 13px 0;
   margin: 0;
 }
 
@@ -440,7 +442,7 @@ input[type="radio"].visually-hidden {
 
 .search {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .user-navigation-item-search {
@@ -676,34 +678,6 @@ input[type="radio"].visually-hidden {
   padding: 11px 25px 10px;
 }
 
-.breadcrumbs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-
-  margin: 10px 0 5px;
-  padding: 0;
-  line-height: 16px;
-
-  list-style: none;
-}
-
-.breadcrumbs-link {
-  display: inline-block;
-
-  line-height: 16px;
-  vertical-align: top;
-}
-
-.breadcrumbs li:not(:last-child)::after {
-  content: "»";
-
-  display: inline-block;
-  margin: 0 6px 0;
-
-  vertical-align: top;
-}
 
 .contacts {
 
@@ -715,8 +689,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   right: 0;
-  margin-top: 80px;
-  margin-right: 35px;
+  margin-top: 72px;
+  margin-right: 28px;
   width: 175px;
 
   font-size: 14px;
@@ -727,7 +701,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 4px;
 }
 
-.contects-phone {
+.contacts-phone {
   font-size: 22px;
   line-height: 24px;
 }
@@ -945,7 +919,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin-bottom: 43px;
-  padding-top: 257px;
+  padding-top: 250px;
 
   text-align: center;
   color: #ffffff;
@@ -1118,7 +1092,7 @@ input[type="radio"].visually-hidden {
 /*продукты и хиты продаж---------------------------------------------------------------------------*/
 
 .popular-catalog {
-  margin: 0 0 35px;
+  margin: 0 0 37px;
 }
 
 .catalog-list {
@@ -1325,8 +1299,8 @@ input[type="radio"].visually-hidden {
 
 .features {
   margin: 0 7px;
-  margin-bottom: 37px;
-  padding: 29px 19px 15px;
+  margin-bottom: 40px;
+  padding: 26px 19px 19px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1357,7 +1331,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0px 0;
+  margin: 0 0px 7px;
   padding: 0 0px 0;
 
   list-style: none;
@@ -1372,12 +1346,15 @@ input[type="radio"].visually-hidden {
 
   font-weight: 400;
 }
-
+.features-item p {
+  margin: 20px 0;
+  margin-bottom: 0;
+}
 .features-item-icecream::before {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
 
   width: 49px;
@@ -1388,11 +1365,11 @@ input[type="radio"].visually-hidden {
   background-size: 49px 49px;
 }
 
-.features-item::before {
+.features-item-leaf::before {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
 
   width: 49px;
@@ -1407,7 +1384,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
 
   width: 49px;
@@ -1422,7 +1399,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
 
   width: 49px;
@@ -1442,8 +1419,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
      -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 45px;
-  margin-right: 15px;
+  margin-bottom: 40px;
+  padding: 0 6px;
 }
 
 /*!--блог ---------------------------------------------------------------------------*/
@@ -1456,10 +1433,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   background-image: url("../img/fon-3.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
-  background-position: 160px -140px;
+  background-position: -25px -224px;
 }
 
 .news h2 {
@@ -1572,25 +1548,21 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
 
-  height: 425px;
-  margin-bottom: 15px;
-
+  height: 429px;
   background-color: #ece5c8;
   overflow: hidden;
+  width: 1200px;
+  right: 20px;
 }
 
 .map-input iframe {
    border: none;
 }
 
-.map-input img {
-  margin-top: -1px;
-}
-
 .map-contacts {
   position: absolute;
-  top: 60px;
-  right: 40px;
+  top: 62px;
+  right: 27px;
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1601,18 +1573,25 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
   color: #323232;
 }
+.map-contacts::before {
+  content: "";
+  position: absolute;
+  top: 62px;
+  left: 27px;
 
-.contacts-text1 {
+  background-image: url("../img/pin.svg");
+}
+.contacts-text-1 {
   margin-bottom: 24px;
   color: #323232;
 }
 
-.contacts-text2 {
+.contacts-text-2 {
   margin-bottom: 26px;
   color: #323232;
 }
 
-.contacts-text1 .p1 {
+.contacts-text-1 .p1 {
   width: 210px;
   margin: 0;
   font-size: 14px;
@@ -1620,7 +1599,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
-.contacts-text2 .p1 {
+.contacts-text-2 .p1 {
   width: 210px;
   margin: 0;
   font-size: 14px;
@@ -1628,14 +1607,14 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
-.contacts-text2 .p2 {
+.contacts-text-2 .p2 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   margin: 0;  
 }
 
-.contacts-text1 .p2 {
+.contacts-text-1 .p2 {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
@@ -1643,14 +1622,14 @@ input[type="radio"].visually-hidden {
 }
 
 
-.contacts-text2 .p2 span:first-child {
+.contacts-text-2 .p2 span:first-child {
   color: #323232;
   text-decoration: none;
   display: inline-block;
   padding-top: 5px;
 }
 
-.contacts-text2 .p2 span:last-child {
+.contacts-text-2 .p2 span:last-child {
   display: block;
   font-size: 14px;
   line-height: 19px;
@@ -1761,10 +1740,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
   flex: none;
   flex-grow: 1;
-  margin-right: 35px;
-  margin-left: 10px;
-  margin-top: 10px;
-
 }
 
 
@@ -1774,9 +1749,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
 
-  margin-left: 10px;
-  padding: 0;
-  padding-top: 3px;
+  margin: 0;
+  padding: 35px 28px;
   list-style: none;
 }
 
@@ -1849,22 +1823,21 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
   padding: 0;
   margin: 8px 0 0 0;
-  width: 280px;
+  width: 320px;
   list-style: none;
+  margin-right: 15px;
 }
 
 .info-item:first-child {
   position: relative;
 
-  margin-right: 15px;
+  margin-right: 8px;
   font-weight: 700;
 }
 
@@ -1883,7 +1856,7 @@ input[type="radio"].visually-hidden {
   background-size: 15px 13px;
 }
 .info-item:nth-child(2) {
-  margin-right: 45px;
+  margin-right: 48px;
 }
 .info-item:last-child {
   position: relative;
@@ -1895,7 +1868,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 180px;
+  margin-right: -12px;
   padding-left: 15px;
 }
 
@@ -1927,6 +1900,7 @@ input[type="radio"].visually-hidden {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  padding: 0 28px;
 }
 
 .footer-logo {
@@ -1966,6 +1940,34 @@ input[type="radio"].visually-hidden {
 
 
 /*!--хлебные крошки ---------------------------------------------------------------------------*/
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+
+  margin-top: 16px;
+  padding: 0;
+  line-height: 16px;
+  margin-left: 5px;
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  display: inline-block;
+
+  line-height: 16px;
+  vertical-align: top;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "»";
+
+  display: inline-block;
+  margin: 0 6px 0;
+
+  vertical-align: top;
+}
 
 .breadcrumbs-link {
   font-size: 14px;
@@ -1990,7 +1992,10 @@ input[type="radio"].visually-hidden {
 
   border: none;
 }
-
+.main-name {
+  margin: 6px 5px;
+  margin-bottom: 29px;
+}
 /*!--фильтры ---------------------------------------------------------------------------*/
 
 .filters {
